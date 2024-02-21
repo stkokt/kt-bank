@@ -6,7 +6,9 @@
 
 // using namespace std;
 
+
 // test
+
 int main() {
   Bank bank;
   Bankkunde* Erwin = bank.addKunde("Erwin");
