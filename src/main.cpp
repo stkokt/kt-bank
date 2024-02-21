@@ -6,7 +6,7 @@
 
 // using namespace std;
 
-// hallo
+// blabla
 int main() {
   Bank bank;
   Bankkunde* Erwin = bank.addKunde("Erwin");
