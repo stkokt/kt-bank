@@ -1,27 +1,20 @@
 #pragma once
-#include<vector>
-#include<iostream>
-#include"Konto.h"
-#include"Kreditkarte.h"
+#include <iostream>
+#include <vector>
 #include "Bankkunde.h"
+#include "Konto.h"
+#include "Kreditkarte.h"
 
+class Bank {
+ public:
+  Bank();
+  ~Bank();
+  static const int* cntCust;
+  std::vector<Bankkunde*> Kunden;
 
-class Bank{
+  Bankkunde* addKunde(std::string name);
 
-    public:
-    Bank();
-    ~Bank();
-    static const int* cntCust;
-    std::vector<std::tuple<Bankkunde*,Konto*, Karte*>> Kunden;
+  static bool proof(Konto* k);
 
-    Bankkunde* addKunde(std::string name);
-
-    static bool proof(Konto* k);
-
-    private:
-    
-
+ private:
 };
-
-
-

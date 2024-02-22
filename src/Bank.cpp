@@ -10,7 +10,7 @@ Bankkunde* Bank::addKunde(std::string name) {
   Konto* k = new Konto();
   Bankkunde* bk = new Bankkunde(name, k);
   Karte* kk = new Karte();
-  this->Kunden.push_back(std::make_tuple(bk, k, kk));
+  this->Kunden.push_back(bk);
   return bk;
 }
 
