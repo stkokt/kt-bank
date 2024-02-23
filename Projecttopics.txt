@@ -1,0 +1,46 @@
+Bankfiliale Bankkunde Kreditkarte Bankautomat
+
+Prüfziffer berechnen:
+uint pruefziffer = 0, quersumme = 0;
+uint ;
+
+array Kartennummer[16] {}
+uint *zahl as iterator through array // how exactly?
+reverse iterate through array, start with [-2]
+for zahl in Kartennummer, 
+if zahl % 2 = 0:
+zahl *= zahl;  
+
+next step:
+for zahl in Kartenarray:
+quersumme bilden aus zahl und in array zurückschreiben
+
+dann quersumme aus array bilden und in quersumme speichern
+
+next: 
+pruefziffer = quersumme % 10
+std::cout<< pruefziffer
+return pruefziffer; :M;K:; ,VC 
+-------------------------------
+
+vergleichsoperator überladen
+dependency injection
+vererbung
+delegation
+Singleton, static
+Yoda Prinzip 
+eigene Datentypen herstellen, Typsicherheit ereugen.
+Adapter bauen z.B. using text = std::string
+Bankkunden sortieren und nach Anfangsbuchstaben ausgeben z.B. set oder map
+-------------------------------
+mvp
+Klassen alle gleich aufbauen -> gleiche Reihenfolge Konstruktor
+Musterklasse Elias
+3 Business Cases festlegen, scenarios. Benjamin
+UML Konvention nachlesen und Fragen aufschreiben Hanno
+
+
+https://wwwlehre.dhbw-stuttgart.de/~kfg/uml/uml.pdf
+https://www.youtube.com/watch?v=ao1ESgIy2Ws
+https://www.oose.de/wp-content/uploads/2012/05/UML-Notations%C3%BCbersicht-2.5.pdf
+https://de.wikipedia.org/wiki/Unified_Modeling_Language
