@@ -1,0 +1,8 @@
+bei punkt 3:
+    was ist gemeint mit einzig aktiver karte. was passiert wenn diese 'pruefung' true oder false ergibt?
+
+
+kontostand:
+    double precision problem. ints oder doubles?
+
+
