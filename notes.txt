@@ -5,4 +5,10 @@ bei punkt 3:
 kontostand:
     double precision problem. ints oder doubles?
 
+Konstruktor/ Destruktor:
+
+Muss der Destruktor im UML erscheinen?
+Wann technisch gesehen, ist der Destruktor im Vector immer implizit? Im C Array? Im C++ Array?
+Muss man den Konstruktor und Destruktor immer im UML reinschreiben oder nur wenn nicht default?
+
 
