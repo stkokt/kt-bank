@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-02-27T08:59:28.038Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="Q92lb9PAuYLJ4_UmzQop" version="23.1.5" type="device">
+<mxfile host="Electron" modified="2024-02-27T15:36:42.228Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="YF2RMsrXOvu6GKXDsF1J" version="23.1.5" type="device">
   <diagram name="Page-1" id="s-HMXYgOpkfJJTglPWlI">
     <mxGraphModel dx="1260" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -434,6 +434,23 @@
         <mxCell id="_i0TJnSxcOvFbVR11NPT-2" value="0..1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2RG2JbtTriZIpNJXNHU2-50" vertex="1" connectable="0">
           <mxGeometry x="-0.5554" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O11gvp8hIQGyZpZUcfBb-1" value="Verzinsung muss hier raus&lt;br&gt;Muss die abstrakte Klasse unbedingt existieren?&lt;br&gt;(Idee war ursprünglich Redundanz vermeiden).&lt;br&gt;Interface Segregation Principle wurde hier verletzt" style="html=1;dropTarget=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="560" y="472" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="O11gvp8hIQGyZpZUcfBb-2" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="O11gvp8hIQGyZpZUcfBb-1" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O11gvp8hIQGyZpZUcfBb-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=6;exitPerimeter=0;" parent="1" source="O11gvp8hIQGyZpZUcfBb-2" target="K2jsW3WkfBgGo3mtC9Qz-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="793" y="530" />
+              <mxPoint x="810" y="530" />
+              <mxPoint x="810" y="563" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
