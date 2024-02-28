@@ -26,14 +26,14 @@ return pruefziffer; :M;K:; ,VC
 -------------------------------
 Themen zur Implementierung
 
-virtual keyword Benutzung und Abstrakte Klasse (private Konstruktor machen?)
-vergleichsoperator überladen
-dependency injection
-vererbung
-delegation
+Virtual keyword Benutzung und Abstrakte Klasse (private Konstruktor machen?)
+Vergleichsoperator überladen
+Dependency injection
+Vererbung
+Delegation
 Singleton, static
 Yoda Prinzip 
-eigene Datentypen herstellen, Typsicherheit ereugen.
+Eigene Datentypen herstellen, Typsicherheit ereugen.
 Adapter bauen z.B. using text = std::string
 Bankkunden sortieren und nach Anfangsbuchstaben ausgeben z.B. set oder map
 -------------------------------
