@@ -7,7 +7,6 @@
 unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
 std::knuth_b genRand(seed);
 std::uniform_int_distribution<int> w10{0, 9};
-static std::vector<unsigned long long> kreditkartenNummern = {};  // gehört das in die headerDatei?
 
 class Kreditkarte {
   std::vector<int> kreditkartenNr = {};  // vector ist einfacher als C-Array
@@ -16,11 +15,11 @@ class Kreditkarte {
   Kreditkarte() {
     generateKartenNr();  // generiert eine 15stellige Nummer + PZ
 
-    while (!checkUnique(vecToInt(kreditkartenNr), kreditkartenNummern)) {
+    while (!checkUnique(vecToInt(kreditkartenNr), Kreditkarte::kreditkartenNummern)) {
       generateKartenNr();
     }
 
-    kreditkartenNummern.push_back(vecToInt(kreditkartenNr));
+    Kreditkarte::kreditkartenNummern.push_back(vecToInt(kreditkartenNr));
   }
 
   void generateKartenNr() {
