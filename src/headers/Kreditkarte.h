@@ -6,6 +6,10 @@
 
 class Kreditkarte{
     public:
+        static std::vector<unsigned long long> kreditkartenNummern;
+
+        Kreditkarte();
+        // ~Kreditkarte();
         Kreditkarte();
         // ~Kreditkarte();
 
