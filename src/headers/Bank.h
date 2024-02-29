@@ -6,15 +6,21 @@
 #include "Kreditkarte.h"
 
 class Bank {
- public:
-  Bank();
-  ~Bank();
-  static const int* cntCust;
-  std::vector<Bankkunde*> Kunden;
-
-  Bankkunde* addKunde(std::string name);
-
-  static bool proof(Konto* k);
-
  private:
+  unsigned int kundenID_gen;
+  std::vector<Bankkunde> kunden;
+  std::vector<Bankautomat> automaten;
+  Bank();
+
+ public:
+  static Bank instance();
+  ~Bank();
+  void kundeAnlegen(std::string vorname, std::string nachname);
+  void kundeLoeschen(unsigned int kundenID);
+  void automatAnlegen(unsigned int automatenID);
+  void automatLoeschen(unsigned int automatenID);
+  Bankkunde getKunde(unsigned int kundenID);
+  Bankkunde getKunde(int index);
+  Bankautomat getAutomat(unsigned int automatID);
+  Bankautomat getAutomat(int index);
 };
