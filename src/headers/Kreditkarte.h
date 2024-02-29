@@ -4,18 +4,18 @@
 #include"Bankkunde.h"
 
 
-class Karte{
-
+class Kreditkarte{
     public:
-    Karte();
-    ~Karte();
+        Kreditkarte();
+        // ~Kreditkarte();
 
-    bool getStatus();
-    void setStatus(Bankkunde* bk);
+        void generateKartenNr();
+        unsigned long long vecToInt(std::vector<int>);
+        int generatePZ(std::vector<int>);
+        bool checkKarte();
+        bool checkUnique(unsigned long long, std::vector<unsigend long long>);
+        void printKartenNr();
 
     private:
-    bool status = false;
-
+        std::vector<int> kreditkartenNr;
 };
-
-//#endif
