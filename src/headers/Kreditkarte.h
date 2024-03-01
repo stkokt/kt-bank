@@ -10,16 +10,15 @@ class Kreditkarte{
 
         Kreditkarte();
         // ~Kreditkarte();
-        Kreditkarte();
-        // ~Kreditkarte();
 
         void generateKartenNr();
         unsigned long long vecToInt(std::vector<int>);
         int generatePZ(std::vector<int>);
-        bool checkKarte();
         bool checkUnique(unsigned long long, std::vector<unsigend long long>);
         void printKartenNr();
 
     private:
         std::vector<int> kreditkartenNr;
 };
+
+//#endif
