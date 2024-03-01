@@ -1,46 +1,75 @@
 #include "Bankkunde.h"
-#include "Konto.h"
-#include "Kreditkarte.h"
-
 #include <iostream>
+#include <string>
 
-Bankkunde::Bankkunde(std::string name, Konto* konto) {
-  this->name = name;
-  this->konto = konto;
-  this->karte = nullptr;
+// Konstruktordefinition
+Bankkunde::Bankkunde(unsigned int kundenID,
+                     std::string vorname,
+                     std::string nachname,
+                     Tagesgeldkonto* tagesgeldKonto,
+                     Festgeldkonto* festgelgKonto,
+                     Girokonto* giroKonto,
+                     Kreditkartenkonto* kreditkartenKonto)
+    : kundenID(Id),
+      vorname(vname),
+      nachname(nname),
+      tagesgeldKonto(tagesgeldKonto),
+      festgelgKonto(festgelgKonto),
+      giroKonto(giroKonto),
+      kreditkartenKonto(kreditkartenKonto) {}
+
+// Getter und Setter für Kunden-ID
+void Bankkunde::setKundenID(unsigned int Id) {
+  this->kundenID = Id;
 }
 
-Bankkunde::~Bankkunde() {
-  this->konto = nullptr;
-  this->karte = nullptr;
+unsigned int Bankkunde::getKundenID() {
+  return this->kundenID;
 }
 
-double Bankkunde::abfrage() {
-  return this->konto->getKontostand();
+// Getter und Setter für Vorname
+void Bankkunde::setVorname(std::string vname) {
+  this->vorname = vname;
 }
 
-void Bankkunde::einzahlen(double betrag) {
-  konto->setKontostand(betrag, true);
-};
-void Bankkunde::auszahlen(double betrag) {
-  konto->setKontostand(betrag, false);
-};
+std::string Bankkunde::Bankkunde::getVorname() {
+  return this->vorname;
+}
+// Getter und Setter für Nachname
+void Bankkunde::Bankkunde::setNahname(std::string nname) {
+  this->nachname = nname;
+}
+std::string Bankkunde::Bankkunde::getNachname() {
+  return this->nachname;
+}
+// Getter und Setter für Tagesgeldkonto
+void Bankkunde::setTagesgeldKonto(Tagesgeldkonto* tagesgeldKonto) {
+  this->tagesgeldKonto = tagesgeldKonto;
+}
+Tagesgeldkonto* Bankkunde::getTagesgeldKonto() {
+  return this->tagesgeldKonto;
+}
 
-bool Bankkunde::beantragenKarte() {
-  Karte* k = new Karte();
-  k->setStatus(this);
-  if (k->getStatus()) {
-    this->karte = k;  // kunde kriegt karte
-    return true;
-  }
-  delete k;  // karte wird geloescht falls kunde kein geld hat
-  return false;
-};
+//// Getter und Setter für FestgeldKonto
+void Bankkunde::setFestgeldKonto(Festgeldkonto* festgelgKonto) {
+  this->festgeldKonto = festgeldKonto;
+}
+Festgeldkonto* Bankkunde::getFestgeldKonto() {
+  return this->festgeldKonto;
+}
 
-Konto* Bankkunde::getKonto() {
-  return this->konto;
-};
+// Getter und Setter für Girokonto
+void Bankkunde::setGiroKonto(Girokonto* giroKonto) {
+  this->giroKonto = giroKonto;
+}
+Girokonto* Bankkunde::Bankkunde::grtGiroKonto() {
+  return this->giroKonto;
+}
 
-Karte* Bankkunde::getKarte() {
-  return this->karte;
-};
+// Getter und Setter für Kreditkartenkonto
+void Bankkunde::setKreditkartenKonto(Kreditkartenkonto* kreditkartenKonto) {
+  this->kreditkartenKonto = kreditkartenKonto;
+}
+Kreditkartenkonto* Bankkunde::Bankkunde::getKreditkartenKonto() {
+  return this->kreditkartenKonto;
+}
