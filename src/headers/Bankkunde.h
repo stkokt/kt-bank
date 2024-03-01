@@ -1,40 +1,43 @@
 #pragma once
-#include<iostream>
+#include <iostream>
+#include <string>
 #include "Konto.h"
-//#include "Kreditkarte.h" //zirkuläre Abhängigkeit aufgelöst siehe Zeile 7
+class Bankkunde {
+ private:
+  unsigned int kundenID;
+  std::string vorname;
+  std::string nachname;
+  Tagesgeldkonto* tagesgeldKonto;
+  Festgeldkonto* festgeldKonto;
+  Girokonto* giroKonto;
+  Kreditkartenkonto* kreditkartenKonto;
 
+ public:
+  Bankkunde(unsigned int kundenID,
+            std::string vorname,
+            std::string nachname,
+            Tagesgeldkonto* tagesgeldKonto,
+            Festgeldkonto* festgelgKonto,
+            Girokonto* giroKonto,
+            Kreditkartenkonto* kreditkartenKonto);
+  void setKundenID(unsigned int Id);
+  unsigned int getKundenID();
 
-class Karte; //Vorwärtsdeklaration
+  void setVorname(std::string vname);
+  std::string getVorname();
 
-class Bankkunde{
+  void setNahname(std::string nname);
+  std::string getNachname();
 
-    public:
-    Bankkunde(std::string name, Konto* k);
-    ~Bankkunde();
+  void setTagesgeldKonto(Tagesgeldkonto* tagesgeldKonto);
+  Tagesgeldkonto* getTagesgeldKonto();
 
-    // Member- Variablen
-    unsigned int kundenID=0;
-    std::string name;
+  void setFestgeldKonto(Festgeldkonto* festgelgKonto);
+  Festgeldkonto* getFestgeldKonto();
 
-    // Member- Funktionen
+  void setGiroKonto(Girokonto* giroKonto);
+  Girokonto* grtGiroKonto();
 
-    double abfrage();
-    void einzahlen(double betrag);
-    void auszahlen(double betrag);
-    bool beantragenKarte();
-    Konto* getKonto();
-    Karte* getKarte();
-
-
-    private:
-
-    Konto* konto;
-    Karte* karte;
-
-
-
-
-
-
+  void setKreditkartenKonto(Kreditkartenkonto* kreditkartenKonto);
+  Kreditkartenkonto* getKreditkartenKonto();
 };
-
