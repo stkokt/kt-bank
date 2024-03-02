@@ -20,6 +20,7 @@ class Bankkunde {
             Festgeldkonto* festgelgKonto,
             Girokonto* giroKonto,
             Kreditkartenkonto* kreditkartenKonto);
+
   void setKundenID(unsigned int Id);
   unsigned int getKundenID();
 
