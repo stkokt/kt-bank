@@ -20,6 +20,7 @@ class Bankkunde {
             Festgeldkonto* festgeldKonto,
             Girokonto* giroKonto,
             Kreditkartenkonto* kreditkartenKonto);
+  Bankkunde(std::string vorname, std::string nachname);
 
   void setKundenID(unsigned int Id);
   unsigned int getKundenID();
