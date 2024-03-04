@@ -10,13 +10,27 @@ Bankkunde::Bankkunde(unsigned int kundenID,
                      Festgeldkonto* festgeldKonto,
                      Girokonto* giroKonto,
                      Kreditkartenkonto* kreditkartenKonto)
-    : kundenID(Id),
-      vorname(vname),
-      nachname(nname),
+    : kundenID(kundenID),
+      vorname(vorname),
+      nachname(nachname),
       tagesgeldKonto(tagesgeldKonto),
       festgeldKonto(festgeldKonto),
       giroKonto(giroKonto),
-      kreditkartenKonto(kreditkartenKonto) {}
+      kreditkartenKonto(kreditkartenKonto) 
+{
+  this->kundenID = 0;
+  this->vorname = "";
+  this->nachname = "";
+  this->tagesgeldKonto = "";
+  this->festgeldKonto = "";
+  this->giroKonto = "";
+  this->kreditkartenKonto = "";
+}
+
+Bankkunde::Bankkunde(std::string vorname, std::string nachname) : vorname(vorname),nachname(nachname){
+  this->vorname = vorname;
+  this->nachname = nachname;
+}
 
 // Getter und Setter für Kunden-ID
 void Bankkunde::setKundenID(unsigned int Id) {
